@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .auth-navlink {
+    @apply border-b-[2px] border-solid border-transparent p-[1rem];
+  }
+  .active-auth-navlink {
+    @apply text-primary font-bold border-b-[2px] border-solid border-primary p-[1rem];
+  }
+}
+

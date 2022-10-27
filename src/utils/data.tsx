@@ -44,7 +44,8 @@ export const loginNavBarItems: NavbarListType = [
         Sign Up
       </button>
     ),
-    navigatable: false,
+    path: '/signup',
+    navigatable: true,
   },
 ];
 
