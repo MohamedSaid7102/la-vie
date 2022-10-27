@@ -1,1 +1,7 @@
-export type ListType = Array<{ itemDom: JSX.Element; itemPath?: string }>;
+export type NavbarItemType = {
+  id: number;
+  dom: JSX.Element;
+  navigatable: boolean;
+  path?: string;
+};
+export type NavbarListType = Array<NavbarItemType>;

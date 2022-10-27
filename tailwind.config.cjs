@@ -7,6 +7,9 @@ module.exports = {
       colors: {
         primary: 'hsl(112 100% 37%)',
       },
+      spacing: {
+        maxWidth: '2140px',
+      },
     },
   },
   variants: {
