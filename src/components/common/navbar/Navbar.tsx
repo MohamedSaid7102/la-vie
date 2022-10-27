@@ -3,7 +3,6 @@ import { NavbarListType } from 'types/types';
 import { NavbarItem } from './NavbarItem';
 import { useSelector } from 'react-redux';
 import { RootState } from 'src/redux/store';
-import { NavLink } from 'react-router-dom';
 import { MobileNavbar } from './MobileNavbar';
 
 interface NavbarProps {
@@ -51,7 +50,7 @@ export const Navbar: React.FC<NavbarProps> = ({ list }) => {
               : 'opacity-0 h-0 select-none pointer-events-none'
           }
           transition-height duration-200
-          w-full max-w-[2140px] m-auto
+          max-w-screen-xl m-auto
           // Responsiveness
           sm:py-1
           flex flex-col items-center justify-around gap-2

@@ -8,7 +8,7 @@ interface MyProps {
 
 export const AuthWrapper: React.FC<AuthWrapperProps> = (props: MyProps) => {
   return (
-    <>
+    <div className="max-w-screen-xl m-auto">
       <header className="flex justify-center">
         <div
           className="
@@ -16,12 +16,14 @@ export const AuthWrapper: React.FC<AuthWrapperProps> = (props: MyProps) => {
       sm:gap-[15rem]
       text-2xl 
       w-full 
-      border-gray-300 border-solid border-b-[1px] max-w-[1500px]"
+      border-gray-300 border-solid border-b-[1px]"
         >
           <NavLink
             to="signup"
             className={({ isActive }) =>
-              isActive ? 'active-auth-navlink' : 'auth-navlink'
+              isActive
+                ? 'active-auth-navlink focus-visible-state'
+                : 'auth-navlink focus-visible-state'
             }
           >
             Sign up
@@ -29,7 +31,9 @@ export const AuthWrapper: React.FC<AuthWrapperProps> = (props: MyProps) => {
           <NavLink
             to="signin"
             className={({ isActive }) =>
-              isActive ? 'active-auth-navlink' : 'auth-navlink'
+              isActive
+                ? 'active-auth-navlink focus-visible-state'
+                : 'auth-navlink focus-visible-state'
             }
           >
             Login
@@ -37,6 +41,6 @@ export const AuthWrapper: React.FC<AuthWrapperProps> = (props: MyProps) => {
         </div>
       </header>
       {props.children}
-    </>
+    </div>
   );
 };
