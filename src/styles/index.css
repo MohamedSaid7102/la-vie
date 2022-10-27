@@ -3,11 +3,35 @@
 @tailwind utilities;
 
 @layer components {
+  /* General */
+  .focus-visible-state {
+    @apply focus-visible:outline-primary focus-visible:outline-offset-4  focus-visible:rounded-md focus-visible:outline-dotted;
+  }
   .auth-navlink {
     @apply border-b-[2px] border-solid border-transparent p-[1rem];
   }
   .active-auth-navlink {
     @apply text-primary font-bold border-b-[2px] border-solid border-primary p-[1rem];
+  }
+
+  .form-group-col {
+    @apply flex flex-col items-start gap-3 px-5 w-[100%];
+  }
+  .form-group-row {
+    @apply flex flex-row justify-start gap-1 px-5 w-[100%];
+  }
+
+  .form-label {
+    @apply text-gray-700 capitalize;
+  }
+
+  .form-input {
+    @apply text-gray-800 border-[1px] border-gray-400 rounded-lg p-[10px] w-full;
+  }
+
+  .text-icon-btn {
+    @apply bg-white flex justify-center items-center gap-6 border-gray-600 border-[1px] p-4 w-[100%] rounded-md
+    sm:justify-start focus-visible-state;
   }
 }
 
