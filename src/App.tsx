@@ -4,6 +4,7 @@ import { Navbar } from './components/common/navbar/Navbar';
 import { Signin } from './pages/Signin';
 // import Sidebar from './components/testTailwind/Sidebar';
 import { loginNavBarItems } from './utils/data';
+import { Signup } from './pages/Signup';
 
 interface AppProps {}
 
@@ -13,7 +14,7 @@ export const App: React.FC<AppProps> = ({}) => {
       <Navbar list={loginNavBarItems} />
       <AuthWrapper>
         {/* <Signin /> */}
-        {/* <Signup /> */}
+        <Signup />
       </AuthWrapper>
     </div>
   );
