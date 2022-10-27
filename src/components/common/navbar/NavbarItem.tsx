@@ -1,5 +1,4 @@
-import { ListItem } from '@mui/material';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { RootState } from 'src/redux/store';
@@ -10,6 +9,26 @@ interface NavbarItemProps {
 }
 
 export const NavbarItem: React.FC<NavbarItemProps> = ({ item }) => {
+  const menueOpen = useSelector((state: RootState) => state.navbar.menueOpen);
+  const [windowDimenion, detectHW] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  const detectSize = () => {
+    detectHW({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', detectSize);
+
+    return () => {
+      window.removeEventListener('resize', detectSize);
+    };
+  }, [windowDimenion]);
   return (
     <>
       {item.navigatable ? (
@@ -23,9 +42,10 @@ export const NavbarItem: React.FC<NavbarItemProps> = ({ item }) => {
             to={item.path || ''}
             className={({ isActive }) =>
               isActive
-                ? 'text-primary w-full h-full flex justify-center py-3'
-                : ' w-full h-full flex justify-center py-3'
+                ? 'text-primary w-full h-full flex justify-center py-3 focus-visible-state'
+                : ' w-full h-full flex justify-center py-3 focus-visible-state'
             }
+            tabIndex={windowDimenion.width > 640 ? 0 : !menueOpen ? -1 : 0}
           >
             {item.dom}
           </NavLink>
