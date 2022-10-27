@@ -18,10 +18,12 @@ export const MenueBtn: React.FC = () => {
           border-[1px] border-primary
           flex justify-center items-center
           sm:scale-0
+          focus-visible-state
           "
       >
         {menueOpen ? (
           <svg
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="192"
             height="192"
@@ -90,6 +92,7 @@ export const MenueBtn: React.FC = () => {
           </svg>
         ) : (
           <svg
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="192"
             height="192"
