@@ -5,11 +5,12 @@ interface FacebookProps {}
 export const Facebook: React.FC<FacebookProps> = ({}) => {
   return (
     <>
-      <button className="text-icon-btn">
+      <button className="text-icon-btn smooth-transition">
         {/* Icon */}
         <svg
+          aria-hidden="true"
           width="28"
-          height="41"
+          height="30"
           viewBox="0 0 28 41"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

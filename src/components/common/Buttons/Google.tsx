@@ -5,12 +5,13 @@ interface GoogleProps {}
 export const Google: React.FC<GoogleProps> = ({}) => {
   return (
     <>
-      <button className="text-icon-btn">
+      <button className="text-icon-btn smooth-transition">
         {/* Icon */}
         <svg
+          aria-hidden="true"
           className="text-icon-btn__icon"
-          width="42"
-          height="36"
+          width="30"
+          height="30"
           viewBox="0 0 42 36"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
