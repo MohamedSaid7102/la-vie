@@ -76,7 +76,7 @@ export const Signin: React.FC<SigninProps> = ({}) => {
         <p className="text-gray-500 text-center">
           Don't have an account?{' '}
           <NavLink
-            to="signup"
+            to="/signup"
             className="text-primary font-bold focus-visible-state hover:text-gray-700 smooth-transition"
           >
             Sign up

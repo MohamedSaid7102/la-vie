@@ -83,7 +83,7 @@ export const Signup: React.FC<SignupProps> = ({}) => {
         <p className="text-gray-500 text-center">
           Already have an account?{' '}
           <NavLink
-            to="signin"
+            to="/signin"
             className="text-primary font-bold focus-visible-state"
           >
             Sign in

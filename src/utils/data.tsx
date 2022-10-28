@@ -4,7 +4,7 @@ export const loginNavBarItems: NavbarListType = [
   {
     id: 0,
     dom: <img src="src/assets/images/logo.png" alt="logo" />,
-    path: '/home',
+    path: '/',
     navigatable: true,
   },
   {

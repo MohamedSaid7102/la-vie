@@ -19,7 +19,7 @@ export const AuthWrapper: React.FC<AuthWrapperProps> = (props: MyProps) => {
       border-gray-300 border-solid border-b-[1px]"
         >
           <NavLink
-            to="signup"
+            to="/signup"
             className={({ isActive }) =>
               isActive
                 ? 'active-auth-navlink focus-visible-state'
@@ -29,7 +29,7 @@ export const AuthWrapper: React.FC<AuthWrapperProps> = (props: MyProps) => {
             Sign up
           </NavLink>
           <NavLink
-            to="signin"
+            to="/signin"
             className={({ isActive }) =>
               isActive
                 ? 'active-auth-navlink focus-visible-state'
