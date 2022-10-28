@@ -4,7 +4,7 @@ export const loginNavBarItems: NavbarListType = [
   {
     id: 0,
     dom: <img src="src/assets/images/logo.png" alt="logo" />,
-    path: '/',
+    path: '/home',
     navigatable: true,
   },
   {
@@ -41,7 +41,7 @@ export const loginNavBarItems: NavbarListType = [
     id: 6,
     dom: (
       <button
-        className="bg-primary text-white px-4 py-2 rounded-md"
+        className="bg-primary hover:bg-slate-700 text-white px-4 py-2 rounded-md"
         tabIndex={-1}
       >
         Sign Up

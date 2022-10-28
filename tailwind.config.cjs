@@ -7,6 +7,11 @@ module.exports = {
       colors: {
         primary: 'hsl(112 100% 37%)',
       },
+      screens: {
+        'hero-break-1': '750px',
+        'hero-break-2': '1226px',
+        'hero-break-3': '1468px',
+      },
     },
   },
   variants: {

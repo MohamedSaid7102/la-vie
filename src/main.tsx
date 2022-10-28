@@ -14,6 +14,7 @@ import { ErrorPage } from './router/ErrorPage';
 import { AuthWrapper } from './components/authuntication/AuthWrapper';
 import { Signin } from './pages/Signin';
 import { Signup } from './pages/Signup';
+import { Home } from './pages/Home';
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ export const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
+      // Singin
       {
         path: '/signin',
         element: (
@@ -29,6 +31,7 @@ export const router = createBrowserRouter([
           </AuthWrapper>
         ),
       },
+      // Signup
       {
         path: '/signup',
         element: (
@@ -36,6 +39,11 @@ export const router = createBrowserRouter([
             <Signup />
           </AuthWrapper>
         ),
+      },
+      // home
+      {
+        path: '/home',
+        element: <Home />,
       },
     ],
   },

@@ -33,7 +33,7 @@ export const Navbar: React.FC<NavbarProps> = ({ list }) => {
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0
+        className="fixed top-0 left-0 right-0 
       z-30 border-[1px] border-solid w-full bg-transparent backdrop-blur
       sm:border-none"
       >
@@ -50,7 +50,7 @@ export const Navbar: React.FC<NavbarProps> = ({ list }) => {
               : 'opacity-0 h-0 select-none pointer-events-none'
           }
           transition-height duration-200
-          max-w-screen-xl m-auto
+          max-w-[2000px] m-auto
           // Responsiveness
           sm:py-1
           flex flex-col items-center justify-around gap-2
