@@ -10,7 +10,7 @@ export const Signin: React.FC<SigninProps> = ({}) => {
     <>
       <form
         action="#!"
-        className="max-w-screen-md my-9 mx-auto flex flex-col gap-5"
+        className="max-w-screen-md my-9 mx-auto flex flex-col gap-5 px-3"
       >
         {/* Email */}
         <div className="form-group-col">
@@ -58,14 +58,17 @@ export const Signin: React.FC<SigninProps> = ({}) => {
           {/* Forget password */}
           <NavLink
             to="/password-reset"
-            className="text-primary underline font-medium text-[13px] whitespace-nowrap pr-[15px] focus-visible-state"
+            className="text-primary hover:text-slate-500 underline font-medium text-[13px] whitespace-nowrap pr-[15px] smooth-transition focus-visible-state"
           >
             Forget password?
           </NavLink>
         </div>
 
         {/* Login button */}
-        <button className="bg-primary text-white py-4 mx-3 rounded-md font-medium focus-visible-state">
+        <button
+          className="bg-primary hover:bg-slate-500
+        smooth-transition text-white py-4 mt-4 rounded-md font-medium focus-visible-state"
+        >
           Login
         </button>
 
@@ -74,33 +77,44 @@ export const Signin: React.FC<SigninProps> = ({}) => {
           Don't have an account?{' '}
           <NavLink
             to="signup"
-            className="text-primary font-bold focus-visible-state"
+            className="text-primary font-bold focus-visible-state hover:text-gray-700 smooth-transition"
           >
             Sign up
           </NavLink>
         </p>
-
         {/* Other Sign in methods */}
-        <p
-          className="text-primary text-center relative overflow-hidden
-
-          sm:after:[''] sm:after:absolute sm:after:w-[100%] sm:after:h-[1px] sm:after:bg-gray-500 sm:after:top-[50%]
-
-        sm:before:[''] sm:before:absolute sm:before:w-[37%] sm:before:h-[1px] sm:before:bg-gray-500 sm:before:top-[50%] sm:before:left-9 
-
-        "
-        >
-          or continue with
-        </p>
-
-        <div
-          className="flex flex-col justify-between gap-[1rem] px-5
-                sm:flex-row sm:gap-[4rem]"
-        >
-          {/* google button */}
+        <div className="flex flex-nowrap items-center gap-2 px-9 mb-5">
+          {/* before line */}
+          <svg
+            aria-hidden="true"
+            width="100%"
+            height="2"
+            viewBox="0 0 522 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line x1="0.613281" y1="1" x2="521.613" y2="1" stroke="#9269BA" />
+          </svg>
+          {/* paragraph */}
+          <p className="text-primary text-center relative whitespace-nowrap">
+            or continue with
+          </p>
+          {/* after line */}
+          <svg
+            aria-hidden="true"
+            width="100%"
+            height="2"
+            viewBox="0 0 522 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line x1="0.613281" y1="1" x2="521.613" y2="1" stroke="#9269BA" />
+          </svg>
+        </div>
+        {/* Google & Facebook Signin methods */}
+        <div className="flex flex-col justify-between gap-[1rem] sm:flex-row sm:gap-[4rem]">
           <GoogleButton />
           <FacebookButton />
-          {/* Facebook button */}
         </div>
       </form>
     </>
