@@ -8,39 +8,64 @@ interface MyProps {
 
 export const AuthWrapper: React.FC<AuthWrapperProps> = (props: MyProps) => {
   return (
-    <div className="max-w-screen-xl m-auto">
-      <header className="flex justify-center">
-        <div
-          className="
+    <>
+      {/* Left decoration */}
+      <img
+        src="/src/assets/images/auth-decoration-left.png"
+        alt="golden planet"
+        className="left-auth-decoration"
+      />
+      <img
+        src="/src/assets/images/auth-decoration-left.png"
+        alt="golden planet"
+        className="left-auth-decoration left-auth-decoration-varient "
+      />
+      {/* Nav & Children */}
+      <div className="max-w-screen-xl m-auto">
+        <header className="flex justify-center">
+          <div
+            className="
       flex justify-center gap-[2rem]
       sm:gap-[15rem]
       text-2xl 
       w-full 
       border-gray-300 border-solid border-b-[1px]"
-        >
-          <NavLink
-            to="/signup"
-            className={({ isActive }) =>
-              isActive
-                ? 'active-auth-navlink focus-visible-state'
-                : 'auth-navlink focus-visible-state'
-            }
           >
-            Sign up
-          </NavLink>
-          <NavLink
-            to="/signin"
-            className={({ isActive }) =>
-              isActive
-                ? 'active-auth-navlink focus-visible-state'
-                : 'auth-navlink focus-visible-state'
-            }
-          >
-            Login
-          </NavLink>
-        </div>
-      </header>
-      {props.children}
-    </div>
+            <NavLink
+              to="/signup"
+              className={({ isActive }) =>
+                isActive
+                  ? 'active-auth-navlink focus-visible-state'
+                  : 'auth-navlink focus-visible-state'
+              }
+            >
+              Sign up
+            </NavLink>
+            <NavLink
+              to="/signin"
+              className={({ isActive }) =>
+                isActive
+                  ? 'active-auth-navlink focus-visible-state'
+                  : 'auth-navlink focus-visible-state'
+              }
+            >
+              Login
+            </NavLink>
+          </div>
+        </header>
+        {props.children}
+      </div>
+      {/* Right decoration */}
+      <img
+        src="/src/assets/images/auth-decoration-right.png"
+        alt="golden planet"
+        className="right-auth-decoration right-auth-decoration-varient"
+      />
+      <img
+        src="/src/assets/images/auth-decoration-right.png"
+        alt="golden planet"
+        className="right-auth-decoration"
+      />
+    </>
   );
 };

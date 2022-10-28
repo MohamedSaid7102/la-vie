@@ -10,7 +10,7 @@ export const Signin: React.FC<SigninProps> = ({}) => {
     <>
       <form
         action="#!"
-        className="max-w-screen-md my-9 mx-auto flex flex-col gap-5 px-3"
+        className="max-w-screen-lg my-9 mx-auto flex flex-col gap-5 px-3"
       >
         {/* Email */}
         <div className="form-group-col">

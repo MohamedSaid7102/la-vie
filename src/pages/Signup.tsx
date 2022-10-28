@@ -10,7 +10,7 @@ export const Signup: React.FC<SignupProps> = ({}) => {
     <>
       <form
         action="#!"
-        className="max-w-screen-md my-9 px-3 mx-auto flex flex-col gap-5"
+        className="max-w-screen-lg my-9 px-3 mx-auto flex flex-col gap-5"
       >
         {/* First name & Last name */}
         <div className="flex flex-col gap-5 sm:flex-row sm:gap-10">

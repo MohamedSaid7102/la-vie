@@ -17,11 +17,12 @@ interface AppProps {}
 
 export const App: React.FC<AppProps> = ({}) => {
   return (
-    <div className="min-h-[200vh]">
-      <Navbar list={loginNavBarItems} />
-      {/* Signin & Signup Pages */}
-      <Outlet />
-    </div>
+    <>
+      <div className="relative">
+        <Navbar list={loginNavBarItems} />
+        <Outlet />
+      </div>
+    </>
   );
 };
 
