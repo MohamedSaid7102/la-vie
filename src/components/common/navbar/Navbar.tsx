@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect, useRef, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { NavbarItem, MobileNavbar } from '@components/';
 import { RootState } from '@redux/store';
-
-// import { NavbarListType } from '@types/types';
+// Hiding navbar logic
+import { handleCloseNavbarDropdownCases } from '@utils/';
+import useOutsideClickDetect from '@hooks/useOutsideClick';
+import { hideNavbar } from '@redux/features/navbarSlice';
 
 type NavbarItemType = {
   id: number;
@@ -19,6 +21,17 @@ interface NavbarProps {
 
 export const Navbar: React.FC<NavbarProps> = ({ list }) => {
   const menueOpen = useSelector((state: RootState) => state.navbar.menueOpen);
+
+  // ----------- Closing navbar on specific cases logic start ----------
+  const dispatch = useDispatch();
+  const navbarRef = useRef(null);
+  function closeDropdownNav() {
+    dispatch(hideNavbar());
+  }
+  handleCloseNavbarDropdownCases();
+  useOutsideClickDetect(navbarRef, closeDropdownNav);
+  // ----------- Closing navbar on specific cases logic end -----------
+
   const [windowDimenion, detectHW] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -41,6 +54,7 @@ export const Navbar: React.FC<NavbarProps> = ({ list }) => {
   return (
     <>
       <nav
+        ref={navbarRef}
         className="fixed top-0 left-0 right-0 
       z-30 border-[1px] border-solid w-full bg-transparent backdrop-blur
       sm:border-none"

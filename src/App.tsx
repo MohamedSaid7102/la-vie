@@ -1,14 +1,7 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
+import React, { useCallback, useEffect } from 'react';
+import { Outlet, useLocation } from 'react-router-dom';
 import { Navbar } from '@components/';
 import { loginNavBarItems } from '@utils/data';
-
-// import { getContacts } from '../contacts';
-
-// export async function loader() {
-//   const contacts = await getContacts();
-//   return { contacts };
-// }
 
 interface AppProps {}
 
