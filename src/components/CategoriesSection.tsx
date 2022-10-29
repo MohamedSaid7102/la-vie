@@ -15,7 +15,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({}) => {
       </h2>
       {/* Horizontally Scrolling gallery */}
       {/* Card container */}
-      <div className="flex flex-row flex-nowrap gap-10 overflow-x-auto px-10">
+      <div className="flex flex-row flex-nowrap gap-10 overflow-x-auto px-10 focus-visible-state">
         {/* card */}
         <div className="flex flex-col gap-4 items-center w-max">
           <img

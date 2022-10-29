@@ -24,7 +24,7 @@ export const ErrorPage: React.FC<ErrorPageProps> = ({}) => {
       <NavLink
         to="/home"
         className="mt-7 text-primary mb-8 px-9 py-5 border-2 border-solid border-primary sm:text-lg
-      hover:bg-primary hover:rounded-xl hover:text-white hover:shadow-2xl smooth-transition "
+      hover:bg-primary hover:rounded-xl hover:text-white hover:shadow-2xl smooth-transition focus-visible-state"
       >
         Back to Home
       </NavLink>

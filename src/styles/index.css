@@ -5,7 +5,7 @@
 @layer components {
   /* General */
   .focus-visible-state {
-    @apply focus-visible:outline-primary focus-visible:outline-offset-4  focus-visible:rounded-md focus-visible:outline-dotted;
+    @apply focus-visible:outline-primary focus-visible:outline-[3px] focus-visible:outline-offset-4  focus-visible:rounded-md focus-visible:outline-dotted;
   }
   .auth-navlink {
     @apply border-b-[2px] border-solid border-transparent p-[1rem];

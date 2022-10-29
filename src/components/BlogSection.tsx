@@ -16,7 +16,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({}) => {
         {/* Card container */}
         <div
           className="flex flex-row flex-nowrap gap-10 overflow-x-auto px-[3rem]
-		sm:min-h-[40rem] odd:mt-12 py-4"
+		sm:min-h-[40rem] odd:mt-12 py-4 items-center focus-visible-state"
         >
           {/* Blog Card */}
           <BlogCard

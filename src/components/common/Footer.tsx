@@ -44,25 +44,39 @@ export const Footer: React.FC<FooterProps> = ({}) => {
       <FooterSection
         heading="sections"
         listOfLinks={[
-          <Link to="home">Home</Link>,
-          <Link to="category">Category</Link>,
-          <Link to="new">New</Link>,
-          <Link to="requestToBeSeller">Request To Be Seller</Link>,
+          <Link className="focus-visible-state" to="home">
+            Home
+          </Link>,
+          <Link className="focus-visible-state" to="category">
+            Category
+          </Link>,
+          <Link className="focus-visible-state" to="new">
+            New
+          </Link>,
+          <Link className="focus-visible-state" to="requestToBeSeller">
+            Request To Be Seller
+          </Link>,
         ]}
       />
       {/* Section 3 */}
       <FooterSection
         heading="contact us"
         listOfLinks={[
-          <a href="tel:+201096787085">phone: +201096787085</a>,
-          <a href="tel:+01244522323">phone: +01244522323</a>,
+          <a className="focus-visible-state" href="tel:+201096787085">
+            phone: +201096787085
+          </a>,
+          <a className="focus-visible-state" href="tel:+01244522323">
+            phone: +01244522323
+          </a>,
           <a
             href="mailto:mohamedshelfwork@gmail.com"
-            className="flex flex-col sm:flex-row flex-wrap justify-start"
+            className="flex flex-col sm:flex-row flex-wrap justify-start focus-visible-state"
           >
             <span>Email:</span> <span>mohamedshelfwork@gmail.com</span>
           </a>,
-          <span>6 October city ,Giza ,egypt</span>,
+          <a href="#!" className="focus-visible-state">
+            <span>6 October city ,Giza ,egypt</span>
+          </a>,
         ]}
       />
       {/* News litter */}
@@ -80,12 +94,12 @@ export const Footer: React.FC<FooterProps> = ({}) => {
               type="email"
               name="email"
               id="news-letter-email"
-              className="border-b-2 border-solid border-slate-400 bg-transparent"
+              className="border-b-2 border-solid border-slate-400 bg-transparent focus-visible-state"
               placeholder="Your Email Address"
             />
             <button
               type="submit"
-              className="uppercase text-slate-400 border border-solid bottom-[2px] border-slate-400 px-8 py-2 hover:bg-slate-400 hover:text-black "
+              className="uppercase text-slate-400 border border-solid bottom-[2px] border-slate-400 px-8 py-2 hover:bg-slate-400 hover:text-black focus-visible-state"
             >
               Submit
             </button>
@@ -98,21 +112,21 @@ export const Footer: React.FC<FooterProps> = ({}) => {
           </h4>
           <div className="flex flex-row flex-wrap gap-6 w-max">
             {/* Facebook */}
-            <Link to="">
+            <Link to="" className="focus-visible-state">
               <img
                 src="/assets/images/footer-facebook-icon.png"
                 alt="facebook logo"
               />
             </Link>
             {/* Instagram */}
-            <Link to="">
+            <Link to="" className="focus-visible-state">
               <img
                 src="/assets/images/footer-instagram-icon.png"
                 alt="instagram logo"
               />
             </Link>
             {/* Twitter */}
-            <Link to="">
+            <Link to="" className="focus-visible-state">
               <img
                 src="/assets/images/footer-twitter-icon.png"
                 alt="twitter logo"

@@ -24,7 +24,7 @@ export const Description: React.FC<DescriptionProps> = ({
         </p>
         <button
           onClick={btnAction ? btnAction : undefined}
-          className="text-white bg-primary hover:bg-slate-700 cursor-pointer px-[30px] py-[10px] rounded-md font-bold max-w-max"
+          className="text-white bg-primary hover:bg-slate-700 cursor-pointer px-[30px] py-[10px] rounded-md font-bold max-w-max focus-visible-state"
         >
           {btnTxt}
         </button>

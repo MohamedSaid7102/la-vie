@@ -11,7 +11,7 @@ export const CustomBranchBtn: React.FC<CustomBranchBtnProps> = ({
 }) => {
   return (
     <button
-      className={`flex flex-row gap-6 flex-nowrap items-center justify-start w-max font-serif font-bold hover:text-slate-600 transition-all smooth-transition text-sm ${style}`}
+      className={`flex flex-row gap-6 flex-nowrap items-center justify-start w-max font-serif font-bold hover:text-slate-600 transition-all smooth-transition text-sm focus-visible-state ${style}`}
     >
       {/* icon */}
       <svg

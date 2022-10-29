@@ -16,7 +16,7 @@ export const BestSellerSection: React.FC<BestSellerSectionProps> = ({}) => {
         {/* Card container */}
         <div
           className="up-down-items-side-scroller flex flex-row flex-nowrap gap-10 overflow-x-auto px-[3rem]
-				sm:min-h-[40rem] odd:mt-12"
+				sm:min-h-[40rem] odd:mt-12 focus-visible-state"
         >
           {/* card */}
           <div className="flex flex-col gap-4 items-start w-max h-max">
