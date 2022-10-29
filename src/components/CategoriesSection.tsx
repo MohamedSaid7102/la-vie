@@ -5,7 +5,7 @@ interface CategoriesSectionProps {}
 export const CategoriesSection: React.FC<CategoriesSectionProps> = ({}) => {
   return (
     <div className="mt-[5rem] sm:mt-[10rem] max-w-[2000px] flex flex-col gap-[3rem] sm:gap-[7rem] sm:px-[7rem] pl-7">
-      <h2 className="font-[900] text-4xl sm:text-7xl relative w-max">
+      <h2 className="font-[900] text-4xl sm:text-7xl relative w-max leading-[1.8]">
         Popular{' '}
         <span className="absolute sm:top-[-30px] top-[-15px] right-0 font-extralight">
           ___

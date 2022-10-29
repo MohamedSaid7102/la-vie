@@ -36,7 +36,7 @@ export const AuthWrapper: React.FC<AuthWrapperProps> = (props: MyProps) => {
               className={({ isActive }) =>
                 isActive
                   ? 'active-auth-navlink focus-visible-state'
-                  : 'auth-navlink focus-visible-state'
+                  : 'auth-navlink focus-visible-state hover:text-slate-600 hover:drop-shadow-md'
               }
             >
               Sign up
@@ -46,7 +46,7 @@ export const AuthWrapper: React.FC<AuthWrapperProps> = (props: MyProps) => {
               className={({ isActive }) =>
                 isActive
                   ? 'active-auth-navlink focus-visible-state'
-                  : 'auth-navlink focus-visible-state'
+                  : 'auth-navlink focus-visible-state hover:text-slate-600 hover:drop-shadow-md'
               }
             >
               Login

@@ -39,9 +39,9 @@ export const Signin: React.FC<SigninProps> = ({}) => {
           />
         </div>
         {/* Remember me + Forget password */}
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-col items-center gap-4 sm:gap-0 text-lg sm:flex-row justify-between">
           {/* Remember me */}
-          <div className="form-group-row">
+          <div className="form-group-row w-max">
             <input
               type="checkbox"
               name="checkbox"
@@ -60,7 +60,7 @@ export const Signin: React.FC<SigninProps> = ({}) => {
           {/* Forget password */}
           <NavLink
             to="/password-reset"
-            className="text-primary hover:text-slate-500 underline font-medium text-[13px] whitespace-nowrap pr-[15px] smooth-transition focus-visible-state"
+            className="text-primary hover:text-slate-500 underline font-medium text-lg whitespace-nowrap pr-[15px] smooth-transition focus-visible-state"
           >
             Forget password?
           </NavLink>
@@ -75,7 +75,7 @@ export const Signin: React.FC<SigninProps> = ({}) => {
         </button>
 
         {/* Signup */}
-        <p className="text-gray-500 text-center">
+        <p className="text-gray-500 text-center text-sm sm:text-lg">
           Don't have an account?{' '}
           <NavLink
             to="/signup"
