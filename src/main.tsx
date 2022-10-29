@@ -1,20 +1,18 @@
 // 3ed parties
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// Componenets
-import App from './App';
-import { store } from './redux/store';
 import { Provider } from 'react-redux';
-// rect-router
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 // Styles
-import './styles/index.css';
+import '@styles/index.css';
 // Componenets
-import { ErrorPage } from './router/ErrorPage';
-import { AuthWrapper } from './components/authuntication/AuthWrapper';
-import { Signin } from './pages/Signin';
-import { Signup } from './pages/Signup';
-import { Home } from './pages/Home';
+import App from './App';
+import { AuthWrapper } from '@components/';
+import { Home, Signin, Signup, ErrorPage } from '@pages/';
+// redux toolki
+import { ApiProvider } from '@reduxjs/toolkit/query/react';
+import { apiSlice } from '@redux/features/api/apiSlice';
+import { store } from '@redux/store';
 
 export const router = createBrowserRouter([
   {
@@ -51,9 +49,11 @@ export const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <Provider store={store}>
-      <RouterProvider router={router} />
-    </Provider>
+    <ApiProvider api={apiSlice}>
+      <Provider store={store}>
+        <RouterProvider router={router} />
+      </Provider>
+    </ApiProvider>
   </React.StrictMode>
 );
 

@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { NavbarListType } from 'types/types';
-import { NavbarItem } from './NavbarItem';
 import { useSelector } from 'react-redux';
-import { RootState } from 'src/redux/store';
-import { MobileNavbar } from './MobileNavbar';
+import { NavbarItem, MobileNavbar } from '@components/';
+import { RootState } from '@redux/store';
 
+// import { NavbarListType } from '@types/types';
+
+type NavbarItemType = {
+  id: number;
+  dom: JSX.Element;
+  navigatable: boolean;
+  path?: string;
+};
+
+type NavbarListType = Array<NavbarItemType>;
 interface NavbarProps {
   list: NavbarListType;
 }

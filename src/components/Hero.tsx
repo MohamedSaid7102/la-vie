@@ -1,6 +1,5 @@
 import React from 'react';
-import { Description as DescriptionCard } from './common/cards/Description';
-import { CustomBranchBtn } from './CustomBranchBtn';
+import { Description as DescriptionCard, CustomBranchBtn } from '@components/';
 
 interface HeroProps {}
 
@@ -12,7 +11,7 @@ export const Hero: React.FC<HeroProps> = ({}) => {
         {/* tree image */}
         <div className="relative hero-break-2:scale-[200%] hero-break-2:left-[5rem]">
           <img
-            src="/src/assets/images/hero-tree.png"
+            src="/assets/images/hero-tree.png"
             alt="tree"
             className="max-w-[200px]"
           />

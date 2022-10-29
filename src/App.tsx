@@ -1,10 +1,7 @@
 import React from 'react';
-import { AuthWrapper } from './components/authuntication/AuthWrapper';
-import { Navbar } from './components/common/navbar/Navbar';
-import { Signin } from './pages/Signin';
-// import Sidebar from './components/testTailwind/Sidebar';
-import { loginNavBarItems } from './utils/data';
 import { Outlet } from 'react-router-dom';
+import { Navbar } from '@components/';
+import { loginNavBarItems } from '@utils/data';
 
 // import { getContacts } from '../contacts';
 

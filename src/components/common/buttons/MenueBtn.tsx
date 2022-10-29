@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleMenue } from '../redux/navbarSlice';
-import { RootState } from 'src/redux/store';
+import { toggleMenue } from '@redux/features/navbarSlice';
+import { RootState } from '@redux/store';
 
 export const MenueBtn: React.FC = () => {
   const menueOpen = useSelector((state: RootState) => state.navbar.menueOpen);

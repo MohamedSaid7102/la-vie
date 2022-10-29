@@ -27,11 +27,11 @@ const FooterSection: React.FC<FooterSectionProps> = ({
 
 export const Footer: React.FC<FooterProps> = ({}) => {
   return (
-    <footer className="pl-4 sm:pl-0 bg-footerBg text-slate-400 mt-[5rem] sm:px-[5rem] sm:py-[6rem] flex flex-col items-start sm:flex-row flex-wrap justify-around gap-[2rem]">
+    <footer className="pl-4 sm:pl-0 bg-footerBg text-slate-400 mt-[5rem] sm:px-[5rem] py-[2rem] sm:py-[6rem] flex flex-col items-start sm:flex-row flex-wrap justify-around gap-[2rem]">
       {/* Section 1 */}
       <div className="flex flex-col items-center gap-[1rem] sm:items-start">
         <img
-          src="/src/assets/images/logo.png"
+          src="/assets/images/logo.png"
           alt="logo"
           className="max-w-[100px]"
         />
@@ -56,8 +56,11 @@ export const Footer: React.FC<FooterProps> = ({}) => {
         listOfLinks={[
           <a href="tel:+201096787085">phone: +201096787085</a>,
           <a href="tel:+01244522323">phone: +01244522323</a>,
-          <a href="mailto:mohamedshelfwork@gmail.com">
-            Email: mohamedshelfwork@gmail.com
+          <a
+            href="mailto:mohamedshelfwork@gmail.com"
+            className="flex flex-col sm:flex-row flex-wrap justify-start"
+          >
+            <span>Email:</span> <span>mohamedshelfwork@gmail.com</span>
           </a>,
           <span>6 October city ,Giza ,egypt</span>,
         ]}
@@ -67,12 +70,12 @@ export const Footer: React.FC<FooterProps> = ({}) => {
         {/* News letter */}
         <form action="#!" className="flex flex-col gap-3">
           <label
-            className="uppercase text-primary font-bold max-w-[15rem]  sm:text-left m-auto sm:m-0"
+            className="uppercase text-primary font-bold max-w-[15rem]  sm:text-left sm:m-0"
             htmlFor="news-letter-email"
           >
             SIGN FOR OUR NEWLETEER AND GET A 10% DISCOUNT
           </label>
-          <div className="flex gap-4 flex-wrap justify-center">
+          <div className="flex gap-4 flex-wrap justify-start">
             <input
               type="email"
               name="email"
@@ -89,29 +92,29 @@ export const Footer: React.FC<FooterProps> = ({}) => {
           </div>
         </form>
         {/* Social contacts */}
-        <div className="flex flex-col items-center sm:items-start gap-5">
-          <h4 className="uppercase text-primary font-bold  sm:text-left m-auto sm:m-0">
+        <div className="flex flex-col items-start gap-5">
+          <h4 className="uppercase text-primary font-bold text-left sm:m-0">
             our social
           </h4>
-          <div className="flex flex-row gap-6 w-max">
+          <div className="flex flex-row flex-wrap gap-6 w-max">
             {/* Facebook */}
             <Link to="">
               <img
-                src="/src/assets/images/footer-facebook-icon.png"
+                src="/assets/images/footer-facebook-icon.png"
                 alt="facebook logo"
               />
             </Link>
             {/* Instagram */}
             <Link to="">
               <img
-                src="/src/assets/images/footer-instagram-icon.png"
+                src="/assets/images/footer-instagram-icon.png"
                 alt="instagram logo"
               />
             </Link>
             {/* Twitter */}
             <Link to="">
               <img
-                src="/src/assets/images/footer-twitter-icon.png"
+                src="/assets/images/footer-twitter-icon.png"
                 alt="twitter logo"
               />
             </Link>

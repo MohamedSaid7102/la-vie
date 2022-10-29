@@ -11,7 +11,7 @@ export const ErrorPage: React.FC<ErrorPageProps> = ({}) => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
       <img
-        src="/src/assets/images/not-found.png"
+        src="/assets/images/not-found.png"
         alt="woundring setting women on a desk"
         className="w-[100%] p-8 max-w-[500px]"
       />

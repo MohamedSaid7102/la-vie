@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { RootState } from 'src/redux/store';
-import { NavbarItemType } from 'types/types';
+import { RootState } from '@redux/store';
+// import { NavbarItemType } from '@types/types';
+type NavbarItemType = {
+  id: number;
+  dom: JSX.Element;
+  navigatable: boolean;
+  path?: string;
+};
+type NavbarListType = Array<NavbarItemType>;
 
 interface NavbarItemProps {
   item: NavbarItemType;

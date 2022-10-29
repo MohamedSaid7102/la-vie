@@ -11,12 +11,12 @@ export const AuthWrapper: React.FC<AuthWrapperProps> = (props: MyProps) => {
     <>
       {/* Left decoration */}
       <img
-        src="/src/assets/images/auth-decoration-left.png"
+        src="/assets/images/auth-decoration-left.png"
         alt="golden planet"
         className="left-auth-decoration"
       />
       <img
-        src="/src/assets/images/auth-decoration-left.png"
+        src="/assets/images/auth-decoration-left.png"
         alt="golden planet"
         className="left-auth-decoration left-auth-decoration-varient "
       />
@@ -57,12 +57,12 @@ export const AuthWrapper: React.FC<AuthWrapperProps> = (props: MyProps) => {
       </div>
       {/* Right decoration */}
       <img
-        src="/src/assets/images/auth-decoration-right.png"
+        src="/assets/images/auth-decoration-right.png"
         alt="golden planet"
         className="right-auth-decoration right-auth-decoration-varient"
       />
       <img
-        src="/src/assets/images/auth-decoration-right.png"
+        src="/assets/images/auth-decoration-right.png"
         alt="golden planet"
         className="right-auth-decoration"
       />

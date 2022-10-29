@@ -4,7 +4,7 @@ interface AboutUsProps {}
 
 export const AboutUs: React.FC<AboutUsProps> = ({}) => {
   return (
-    <div className="mt-[5rem] sm:mt-[10rem] max-w-[2000px] flex flex-col gap-[3rem] sm:gap-[7rem] sm:px-[7rem] px-7  about-us-break-1:flex-row">
+    <div className="mt-[5rem] sm:mt-[10rem] max-w-[2000px] flex flex-col gap-[3rem] sm:gap-[7rem] sm:px-[7rem] pl-7 pr-2  about-us-break-1:flex-row">
       {/* Left */}
       <div className="flex flex-col gap-[1rem] sm:gap-[2rem] max-w-[40rem]">
         <h2 className="font-[900] text-4xl sm:text-7xl relative w-max">
@@ -26,12 +26,12 @@ export const AboutUs: React.FC<AboutUsProps> = ({}) => {
       {/* Right */}
       <div className="relative w-max max-w-[20rem] sm:max-w-[30rem] m-auto">
         <img
-          src="/src/assets/images/meeting.png"
+          src="/assets/images/meeting.png"
           alt="meeting people"
           className="w-[85%] sm:w-[100%] min-w-[200px]"
         />
         <img
-          src="/src/assets/images/frame-rect.png"
+          src="/assets/images/frame-rect.png"
           alt="meeting people"
           className="absolute w-[85%] sm:w-[100%] min-w-[200px] top-[1rem] left-[-1rem] z-[-1]"
         />

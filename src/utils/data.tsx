@@ -1,9 +1,10 @@
-import { NavbarListType } from 'types/types';
+import { NavbarListType } from '@myTypes/types';
+import React from 'react';
 
 export const loginNavBarItems: NavbarListType = [
   {
     id: 0,
-    dom: <img src="src/assets/images/logo.png" alt="logo" />,
+    dom: <img src="/assets/images/logo.png" alt="logo" />,
     path: '/home',
     navigatable: true,
   },

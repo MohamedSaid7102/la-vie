@@ -5,7 +5,7 @@ interface BestSellerSectionProps {}
 export const BestSellerSection: React.FC<BestSellerSectionProps> = ({}) => {
   return (
     <>
-      <div className="mt-[5rem] sm:mt-[10rem] max-w-[2000px] flex flex-col gap-[3rem] sm:gap-[7rem] sm:px-[7rem] px-7">
+      <div className="mt-[5rem] sm:mt-[10rem] max-w-[2000px] flex flex-col gap-[3rem] sm:gap-[7rem] sm:px-[7rem] pl-7">
         <h2 className="font-[900] text-4xl sm:text-7xl relative w-max">
           Best seller{' '}
           <span className="absolute sm:top-[-30px] sm:right-[-4.5rem] top-[-15px] right-[-3rem] font-extralight">
@@ -21,7 +21,7 @@ export const BestSellerSection: React.FC<BestSellerSectionProps> = ({}) => {
           {/* card */}
           <div className="flex flex-col gap-4 items-start w-max h-max">
             <img
-              src="/src/assets/images/p9.png"
+              src="/assets/images/p9.png"
               alt="planet image"
               className="max-w-[200px] sm:max-w-[400px]"
             />
@@ -35,7 +35,7 @@ export const BestSellerSection: React.FC<BestSellerSectionProps> = ({}) => {
           {/* card */}
           <div className="flex flex-col gap-4 items-start w-max h-max">
             <img
-              src="/src/assets/images/p7.png"
+              src="/assets/images/p7.png"
               alt="planet image"
               className="max-w-[200px] sm:max-w-[400px]"
             />
@@ -49,7 +49,7 @@ export const BestSellerSection: React.FC<BestSellerSectionProps> = ({}) => {
           {/* card */}
           <div className="flex flex-col gap-4 items-start w-max h-max">
             <img
-              src="/src/assets/images/p8.png"
+              src="/assets/images/p8.png"
               alt="planet image"
               className="max-w-[200px] sm:max-w-[400px]"
             />
@@ -63,7 +63,7 @@ export const BestSellerSection: React.FC<BestSellerSectionProps> = ({}) => {
           {/* card */}
           <div className="flex flex-col gap-4 items-start w-max h-max">
             <img
-              src="/src/assets/images/p9.png"
+              src="/assets/images/p9.png"
               alt="planet image"
               className="max-w-[200px] sm:max-w-[400px]"
             />
@@ -77,7 +77,7 @@ export const BestSellerSection: React.FC<BestSellerSectionProps> = ({}) => {
           {/* card */}
           <div className="flex flex-col gap-4 items-start w-max h-max">
             <img
-              src="/src/assets/images/p7.png"
+              src="/assets/images/p7.png"
               alt="planet image"
               className="max-w-[200px] sm:max-w-[400px]"
             />
@@ -91,7 +91,7 @@ export const BestSellerSection: React.FC<BestSellerSectionProps> = ({}) => {
           {/* card */}
           <div className="flex flex-col gap-4 items-start w-max h-max">
             <img
-              src="/src/assets/images/p8.png"
+              src="/assets/images/p8.png"
               alt="planet image"
               className="max-w-[200px] sm:max-w-[400px]"
             />
@@ -105,7 +105,7 @@ export const BestSellerSection: React.FC<BestSellerSectionProps> = ({}) => {
           {/* card */}
           <div className="flex flex-col gap-4 items-start w-max h-max">
             <img
-              src="/src/assets/images/p9.png"
+              src="/assets/images/p9.png"
               alt="planet image"
               className="max-w-[200px] sm:max-w-[400px]"
             />
@@ -119,7 +119,7 @@ export const BestSellerSection: React.FC<BestSellerSectionProps> = ({}) => {
           {/* card */}
           <div className="flex flex-col gap-4 items-start w-max h-max">
             <img
-              src="/src/assets/images/p7.png"
+              src="/assets/images/p7.png"
               alt="planet image"
               className="max-w-[200px] sm:max-w-[400px]"
             />
@@ -133,7 +133,7 @@ export const BestSellerSection: React.FC<BestSellerSectionProps> = ({}) => {
           {/* card */}
           <div className="flex flex-col gap-4 items-start w-max h-max">
             <img
-              src="/src/assets/images/p8.png"
+              src="/assets/images/p8.png"
               alt="planet image"
               className="max-w-[200px] sm:max-w-[400px]"
             />

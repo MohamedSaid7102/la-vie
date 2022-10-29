@@ -1,7 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Google as GoogleButton } from '../components/common/Buttons/Google';
-import { Facebook as FacebookButton } from '../components/common/Buttons/Facebook';
+import {
+  Google as GoogleButton,
+  Facebook as FacebookButton,
+} from '@components/';
 
 interface SignupProps {}
 
