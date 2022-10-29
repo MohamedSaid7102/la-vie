@@ -43,7 +43,7 @@ export const NavbarItem: React.FC<NavbarItemProps> = ({ item }) => {
             className={({ isActive }) =>
               isActive
                 ? 'text-primary w-full h-full flex justify-center py-3 focus-visible-state'
-                : ' w-full h-full flex justify-center py-3 focus-visible-state'
+                : ' w-full h-full flex justify-center py-3 hover:text-slate-600 hover:underline focus-visible-state'
             }
             tabIndex={windowDimenion.width > 640 ? 0 : !menueOpen ? -1 : 0}
           >
