@@ -1,6 +1,7 @@
 import React from 'react';
 import { Hero } from '../components/Hero';
 import { CategoriesSection } from '../components/CategoriesSection';
+import { BestSellerSection } from '../components/common/BestSellerSection';
 
 interface HomeProps {}
 
@@ -17,6 +18,7 @@ export const Home: React.FC<HomeProps> = ({}) => {
         {/* Content */}
         <Hero />
         <CategoriesSection />
+        <BestSellerSection />
       </div>
     </>
   );

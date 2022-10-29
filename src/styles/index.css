@@ -62,3 +62,10 @@ body {
   overflow-x: hidden;
 }
 
+.up-down-items-side-scroller :nth-child(odd) {
+  align-self: flex-start;
+}
+.up-down-items-side-scroller :nth-child(even) {
+  align-self: flex-end;
+}
+

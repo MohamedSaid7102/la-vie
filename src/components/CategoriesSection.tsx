@@ -23,7 +23,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({}) => {
             alt="planet image"
             className="max-w-[100px] sm:max-w-[200px]"
           />
-          <h3 className="font-bold text-lg sm:text-2xl">Tools</h3>
+          <h3 className="font-bold text-lg sm:text-2xl text-center">Tools</h3>
         </div>
         {/* card */}
         <div className="flex flex-col gap-4 items-center w-max">
@@ -32,7 +32,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({}) => {
             alt="planet image"
             className="max-w-[100px] sm:max-w-[200px]"
           />
-          <h3 className="font-bold text-lg sm:text-2xl">Seeds</h3>
+          <h3 className="font-bold text-lg sm:text-2xl text-center">Seeds</h3>
         </div>
         {/* card */}
         <div className="flex flex-col gap-4 items-center w-max">
@@ -41,7 +41,9 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({}) => {
             alt="planet image"
             className="max-w-[100px] sm:max-w-[200px]"
           />
-          <h3 className="font-bold text-lg sm:text-2xl">Low Light Plants</h3>
+          <h3 className="font-bold text-lg sm:text-2xl text-center">
+            Low Light Plants
+          </h3>
         </div>
         {/* card */}
         <div className="flex flex-col gap-4 items-center w-max">
@@ -50,7 +52,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({}) => {
             alt="planet image"
             className="max-w-[100px] sm:max-w-[200px]"
           />
-          <h3 className="font-bold text-lg sm:text-2xl">Tools</h3>
+          <h3 className="font-bold text-lg sm:text-2xl text-center">Tools</h3>
         </div>
         {/* card */}
         <div className="flex flex-col gap-4 items-center w-max">
@@ -59,7 +61,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({}) => {
             alt="planet image"
             className="max-w-[100px] sm:max-w-[200px]"
           />
-          <h3 className="font-bold text-lg sm:text-2xl">Seeds</h3>
+          <h3 className="font-bold text-lg sm:text-2xl text-center">Seeds</h3>
         </div>
         {/* card */}
         <div className="flex flex-col gap-4 items-center w-max">
@@ -68,7 +70,9 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({}) => {
             alt="planet image"
             className="max-w-[100px] sm:max-w-[200px]"
           />
-          <h3 className="font-bold text-lg sm:text-2xl">Low Light Plants</h3>
+          <h3 className="font-bold text-lg sm:text-2xl text-center">
+            Low Light Plants
+          </h3>
         </div>
         {/* card */}
         <div className="flex flex-col gap-4 items-center w-max">
@@ -77,7 +81,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({}) => {
             alt="planet image"
             className="max-w-[100px] sm:max-w-[200px]"
           />
-          <h3 className="font-bold text-lg sm:text-2xl">Tools</h3>
+          <h3 className="font-bold text-lg sm:text-2xl text-center">Tools</h3>
         </div>
         {/* card */}
         <div className="flex flex-col gap-4 items-center w-max">
@@ -86,7 +90,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({}) => {
             alt="planet image"
             className="max-w-[100px] sm:max-w-[200px]"
           />
-          <h3 className="font-bold text-lg sm:text-2xl">Seeds</h3>
+          <h3 className="font-bold text-lg sm:text-2xl text-center">Seeds</h3>
         </div>
         {/* card */}
         <div className="flex flex-col gap-4 items-center w-max">
@@ -95,7 +99,9 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({}) => {
             alt="planet image"
             className="max-w-[100px] sm:max-w-[200px]"
           />
-          <h3 className="font-bold text-lg sm:text-2xl">Low Light Plants</h3>
+          <h3 className="font-bold text-lg sm:text-2xl text-center">
+            Low Light Plants
+          </h3>
         </div>
         {/* card */}
         <div className="flex flex-col gap-4 items-center w-max">
@@ -104,7 +110,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({}) => {
             alt="planet image"
             className="max-w-[100px] sm:max-w-[200px]"
           />
-          <h3 className="font-bold text-lg sm:text-2xl">Tools</h3>
+          <h3 className="font-bold text-lg sm:text-2xl text-center">Tools</h3>
         </div>
         {/* card */}
         <div className="flex flex-col gap-4 items-center w-max">
@@ -113,7 +119,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({}) => {
             alt="planet image"
             className="max-w-[100px] sm:max-w-[200px]"
           />
-          <h3 className="font-bold text-lg sm:text-2xl">Seeds</h3>
+          <h3 className="font-bold text-lg sm:text-2xl text-center">Seeds</h3>
         </div>
         {/* card */}
         <div className="flex flex-col gap-4 items-center w-max">
@@ -122,7 +128,9 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({}) => {
             alt="planet image"
             className="max-w-[100px] sm:max-w-[200px]"
           />
-          <h3 className="font-bold text-lg sm:text-2xl">Low Light Plants</h3>
+          <h3 className="font-bold text-lg sm:text-2xl text-center">
+            Low Light Plants
+          </h3>
         </div>
       </div>
     </div>
