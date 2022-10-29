@@ -11,6 +11,8 @@ module.exports = {
         'hero-break-1': '750px',
         'hero-break-2': '1226px',
         'hero-break-3': '1468px',
+
+        'about-us-break-1': '940px',
       },
     },
   },

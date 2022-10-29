@@ -3,6 +3,7 @@ import { Hero } from '../components/Hero';
 import { CategoriesSection } from '../components/CategoriesSection';
 import { BestSellerSection } from '../components/common/BestSellerSection';
 import { BlogSection } from '../components/BlogSection';
+import { AboutUs } from '../components/AboutUs';
 
 interface HomeProps {}
 
@@ -21,6 +22,7 @@ export const Home: React.FC<HomeProps> = ({}) => {
         <CategoriesSection />
         <BestSellerSection />
         <BlogSection />
+        <AboutUs />
       </div>
     </>
   );
