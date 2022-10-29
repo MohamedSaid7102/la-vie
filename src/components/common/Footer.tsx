@@ -16,8 +16,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({
       <div className="flex flex-col justify-end gap-[0.5rem] w-max  sm:text-left">
         <h4 className="uppercase text-primary font-bold">{heading}</h4>
         <ul className="flex flex-col gap-[1rem]">
-          {listOfLinks.map((link) => (
-            <li>{link}</li>
+          {listOfLinks.map((link, key) => (
+            <li key={key}>{link}</li>
           ))}
         </ul>
       </div>
@@ -77,7 +77,7 @@ export const Footer: React.FC<FooterProps> = ({}) => {
               type="email"
               name="email"
               id="news-letter-email"
-              className="border-b-2 border-solid border-slate-400"
+              className="border-b-2 border-solid border-slate-400 bg-transparent"
               placeholder="Your Email Address"
             />
             <button
