@@ -5,6 +5,7 @@ import { BestSellerSection } from '../components/common/BestSellerSection';
 import { BlogSection } from '../components/BlogSection';
 import { AboutUs } from '../components/AboutUsSection';
 import { MobileAppSection } from '../components/MobileAppSection';
+import { Footer } from '../components/common/Footer';
 
 interface HomeProps {}
 
@@ -25,6 +26,7 @@ export const Home: React.FC<HomeProps> = ({}) => {
         <BlogSection />
         <AboutUs />
         <MobileAppSection />
+        <Footer />
       </div>
     </>
   );

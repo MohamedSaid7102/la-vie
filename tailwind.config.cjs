@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         primary: 'hsl(112 100% 37%)',
+        footerBg: '#FAFAFA',
       },
       screens: {
         'hero-break-1': '750px',
