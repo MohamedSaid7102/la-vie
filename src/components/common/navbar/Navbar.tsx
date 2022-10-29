@@ -3,8 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { NavbarItem, MobileNavbar } from '@components/';
 import { RootState } from '@redux/store';
 // Hiding navbar logic
-import { handleCloseNavbarDropdownCases } from '@utils/';
-import useOutsideClickDetect from '@hooks/useOutsideClick';
+import useOnLoseFocuse from '@hooks/useOnLoseFocuse';
 import { hideNavbar } from '@redux/features/navbarSlice';
 
 type NavbarItemType = {
@@ -25,11 +24,9 @@ export const Navbar: React.FC<NavbarProps> = ({ list }) => {
   // ----------- Closing navbar on specific cases logic start ----------
   const dispatch = useDispatch();
   const navbarRef = useRef(null);
-  function closeDropdownNav() {
+  useOnLoseFocuse(navbarRef, () => {
     dispatch(hideNavbar());
-  }
-  handleCloseNavbarDropdownCases();
-  useOutsideClickDetect(navbarRef, closeDropdownNav);
+  });
   // ----------- Closing navbar on specific cases logic end -----------
 
   const [windowDimenion, detectHW] = useState({
