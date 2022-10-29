@@ -36,6 +36,10 @@
     hover:bg-slate-200;
   }
 
+  .text-icon-btn-black {
+    @apply text-icon-btn bg-black text-white hover:bg-slate-900 lg:max-w-[15rem];
+  }
+
   .left-auth-decoration {
     @apply absolute top-[100px] left-[-30px] scale-50 sm:scale-100 z-[-100];
   }

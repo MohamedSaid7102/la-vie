@@ -13,6 +13,8 @@ module.exports = {
         'hero-break-3': '1468px',
 
         'about-us-break-1': '940px',
+
+        'mobile-app-break-1': '1166px',
       },
     },
   },

@@ -3,7 +3,8 @@ import { Hero } from '../components/Hero';
 import { CategoriesSection } from '../components/CategoriesSection';
 import { BestSellerSection } from '../components/common/BestSellerSection';
 import { BlogSection } from '../components/BlogSection';
-import { AboutUs } from '../components/AboutUs';
+import { AboutUs } from '../components/AboutUsSection';
+import { MobileAppSection } from '../components/MobileAppSection';
 
 interface HomeProps {}
 
@@ -23,6 +24,7 @@ export const Home: React.FC<HomeProps> = ({}) => {
         <BestSellerSection />
         <BlogSection />
         <AboutUs />
+        <MobileAppSection />
       </div>
     </>
   );
