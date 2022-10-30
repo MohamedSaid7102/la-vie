@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 import '@styles/index.css';
 // Componenets
 import App from './App';
-import { AuthWrapper } from '@components/';
+import { AboutUs, AuthWrapper, Footer } from '@components/';
 import { Home, Signin, Signup, ErrorPage } from '@pages/';
 // redux toolki
 import { ApiProvider } from '@reduxjs/toolkit/query/react';
@@ -42,6 +42,16 @@ export const router = createBrowserRouter([
       {
         path: '/home',
         element: <Home />,
+      },
+      // About
+      {
+        path: '/about',
+        element: (
+          <div>
+            <AboutUs />
+            <Footer />
+          </div>
+        ),
       },
     ],
   },
