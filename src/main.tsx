@@ -2,12 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  redirect,
-} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 // Styles
 import '@styles/index.css';
 // Componenets
@@ -18,17 +13,11 @@ import { Home, Signin, Signup, ErrorPage } from '@pages/';
 import { ApiProvider } from '@reduxjs/toolkit/query/react';
 import { apiSlice } from '@redux/features/api/apiSlice';
 import { store } from '@redux/store';
-import { useNavigate } from 'react-router-dom';
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: (
-      <>
-        <App />
-        <Home />
-      </>
-    ),
+    element: <App />,
     errorElement: <ErrorPage />,
     children: [
       // Singin
